@@ -48,7 +48,7 @@
     "source-map-explorer": "^2.5.2",
     "stripe": "^17.6.0",
     "subscriptions-transport-ws": "^0.9.19",
-    "uuid": "^8.3.2",
+    "uuid": "^11.1.0",
     "web-vitals": "^4.2.4"
   },
   "scripts": {
