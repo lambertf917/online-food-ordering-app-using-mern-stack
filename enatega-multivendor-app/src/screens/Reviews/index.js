@@ -98,7 +98,9 @@ const Reviews = ({ navigation, route }) => {
             {Object.keys(reviewGroups)
               .sort((a, b) => b - a)
               .map((i, index) => {
-                const filled = (reviewGroups[i] / restaurant.total) * 100
+                // Use reviews.length to calculate the correct percentage distribution
+                const totalReviews = reviews.length || 1
+                const filled = (reviewGroups[i] / totalReviews) * 100
                 const unfilled = filled ? 100 - filled : 100
                 return (
                   <View
